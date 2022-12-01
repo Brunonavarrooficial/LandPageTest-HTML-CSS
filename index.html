@@ -14,18 +14,34 @@
     />
   </head>
   <body>
+    <input
+      type="checkbox"
+      role="button"
+      aria-label="Close menu"
+      name="close menu responsivo"
+      id="close-menu-responsivo"
+      class="close-menu-responsivo"
+    />
+    <label
+      class="close-menu-label"
+      for="close-menu-responsivo"
+      title="close menu"
+    ></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1>
+        <h1 onclick="getElementById('close-menu-responsivo').checked = false;">
           <a href="#intro">Logo</a>
         </h1>
         <nav>
-          <ul>
+          <ul
+            onclick="getElementById('close-menu-responsivo').checked = false;"
+          >
             <li><a href="#top3">Intro</a></li>
             <li><a href="#grid-one">Top 3</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#grid-two">Top 3</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -111,9 +127,230 @@
     </section>
 
     <section id="gallery" class="section white-bg">
-      <div class="main-content">
-        <h1>Teste</h1>
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">Gallery</h2>
+        <p class="grid-description">Uma breve descrição</p>
+        <div class="grid">
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=1"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=2"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=3"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=4"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=5"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+          <article class="gallery-img">
+            <img
+              src="http://source.unsplash.com/random/360x360?r=6"
+              alt="grid de Imagens aleatorias da galeria unsplash"
+            />
+          </article>
+        </div>
       </div>
     </section>
+
+    <section id="grid-two" class="grid-one main-bg section">
+      <div class="main-content grid-one-content">
+        <h2 class="grid-main-heading">top 3 jobs</h2>
+        <p class="grid-description">Uma breve descrição</p>
+        <div class="grid">
+          <article>
+            <h3>Teste 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              enim consequuntur ipsa inventore repudiandae aspernatur aperiam
+              expedita minima accusamus dicta soluta, delectus cumque, deserunt
+              quibusdam eius laboriosam rem non? Placeat!
+            </p>
+          </article>
+          <article>
+            <h3>Teste 2</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+              quae cum saepe magni, quam sit reprehenderit illum rem!
+              Consectetur iusto quibusdam eius! Dolorem perspiciatis illo optio
+              aut ut necessitatibus aspernatur.
+            </p>
+          </article>
+          <article>
+            <h3>Teste 3</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+              quae cum saepe magni, quam sit reprehenderit illum rem!
+              Consectetur iusto quibusdam eius! Dolorem perspiciatis illo optio
+              aut ut necessitatibus aspernatur.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+      <div class="main-content top3-content">
+        <h2>bla bla bla</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eaque
+          facere illum dolorum, exercitationem fugit perspiciatis vitae dolores
+          eius aperiam impedit veniam pariatur ut distinctio voluptatum
+          doloremque ipsa enim accusantium.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eaque
+          facere illum dolorum, exercitationem fugit perspiciatis vitae dolores
+          eius aperiam impedit veniam pariatur ut distinctio voluptatum
+          doloremque ipsa enim accusantium.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eaque
+          facere illum dolorum, exercitationem fugit perspiciatis vitae dolores
+          eius aperiam impedit veniam pariatur ut distinctio voluptatum
+          doloremque ipsa enim accusantium.
+        </p>
+
+        <div class="responsive-table">
+          <table>
+            <caption>
+              Pricing Table
+            </caption>
+
+            <thead>
+              <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Teste 123</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>january brings us firefox 85</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus dolor dolorem quod delectus, dolorum, totam debitis
+            recusandae cumque impedit, officiis iure iste placeat illo commodi
+            fugiat. In aliquam possimus molestias.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="assets/javascript.svg" alt="Logo de HTML CSS e Js." />
+        </div>
+        <div class="contact-form">
+          <fieldset class="form-grid">
+            <legend>Contact me</legend>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Your Last Name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail"
+              />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write Message..."
+              ></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit">Send message</button>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <footer id="'footer" class="footer white-bg">
+      <p>
+        <a href="https://github.com/Brunonavarrooficial" target="_blank">
+          By Bruno Bonfim &reg;
+        </a>
+      </p>
+    </footer>
+
+    <a class="back-to-top" href="#home">⮞</a>
   </body>
 </html>
