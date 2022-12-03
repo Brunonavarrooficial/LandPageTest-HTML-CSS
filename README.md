@@ -6,6 +6,10 @@ Criação de Pagina Estástica com tecnicas HTML e CSS.
 
 > Tags semanticas
 
+> Links de ancoragem para rolar a pagina ao container desejado
+
 ### CSS
 
 > Variaveis root customizadas
+
+> Media Query para página responsiva
